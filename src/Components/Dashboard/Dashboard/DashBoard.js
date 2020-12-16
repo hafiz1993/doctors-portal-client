@@ -20,7 +20,7 @@ const DashBoard = () => {
     }
 
     useEffect(() =>{
-        fetch('http://localhost:4000/appointmentByDate', {
+        fetch('https://powerful-crag-98528.herokuapp.com/appointmentByDate', {
             method:'POST',
             headers: {'content-type' : 'application/json'},
             body: JSON.stringify({date:selectedDate, email: loggedInUser.email})

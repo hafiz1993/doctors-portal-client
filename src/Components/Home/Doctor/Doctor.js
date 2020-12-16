@@ -6,7 +6,7 @@ import DoctorDetails from '../DoctorDetails/DoctorDetails';
 const Doctor = () => {
     const [doctors, setDoctors]  = useState([])
     useEffect( () => {
-        fetch('http://localhost:4000/doctors')
+        fetch('https://powerful-crag-98528.herokuapp.com/doctors')
         .then(res => res.json())
         .then(data => setDoctors(data))
     }, [])

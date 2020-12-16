@@ -22,7 +22,7 @@ const Adddoctor = () => {
         formData.append('name', info.name)
         formData.append('email', info.email)
 
-        fetch('http://localhost:4000/addDoctor', {
+        fetch('https://powerful-crag-98528.herokuapp.com/addDoctor', {
             method: 'POST',
             body: formData
         })
