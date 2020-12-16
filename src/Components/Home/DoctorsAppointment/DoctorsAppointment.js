@@ -1,6 +1,7 @@
 import React from 'react'
 import './DoctorsAppointment.css'
 import doctor from '../../../images/doctor.png';
+import { Link } from 'react-router-dom';
 
 const DoctorsAppointment = () => {
     return (
@@ -14,10 +15,11 @@ const DoctorsAppointment = () => {
                         <h5 style={{color:'#5EC2B6'}} className="text-uppercase">Appointment</h5>
                         <h1 className="my-4">make Appointment <br /> Today</h1>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum debitis dolorum vero ullam aspernatur facilis accusamus nobis vel dolorem quibusdam placeat iusto iste rem ex tenetur voluptatem, eaque delectus animi.</p>
-
-                        <button style={{ backgroundColor: '#11D0DD', width: '200px', height: '50px' }} className="btn  btn-outline-dark" >
+                        <Link path to ='/appointment'>
+                        <button  style={{ backgroundColor: '#11D0DD', width: '200px', height: '50px' }} className="btn  btn-outline-dark" >
                             Learn more
                 </button>
+                </Link>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -20,35 +21,36 @@ const Navbar = () => {
         <ul class="navbar-nav ml-auto">
             {/* margin left(mr/ml) */}
           <li class="nav-item active">
-            <a class="nav-link mr-5" href="#">
+            <Link class="nav-link mr-5" to ="/" >
               Home <span class="sr-only">(current)</span>
-            </a>
+            </Link>
           </li>
-          <li class="nav-item">
+          <Link to = "/allPatients" class="nav-item">
             <a class="nav-link mr-5" href="#">
-              About
+              Patient
             </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mr-5" href="#">
-              Dental Service
-            </a>
-          </li>
-          <li class="nav-item">
+          </Link>
+          <Link  class="nav-item">
+            <Link to = "/dashboard" class="nav-link mr-5" >
+              DashBoard
+            </Link>
+          </Link>
+          
+          <Link class="nav-item">
             <a class="nav-link mr-5 text-white" href="#">
-              Reviews
+             Admin
             </a>
-          </li>
-          <li class="nav-item">
+          </Link>
+          <Link class="nav-item">
             <a class="nav-link mr-5 text-white" href="#">
               Blogs
             </a>
-          </li>
-          <li class="nav-item">
+          </Link>
+          <Link  class="nav-item">
             <a class="nav-link mr-5 text-white" href="#">
               Contact Us
             </a>
-          </li>
+          </Link>
         </ul>
       </div>
     </nav>

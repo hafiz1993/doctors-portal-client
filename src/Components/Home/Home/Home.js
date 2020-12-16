@@ -4,15 +4,16 @@ import Contact from '../Contact/Contact';
 import Doctor from '../Doctor/Doctor';
 import DoctorsAppointment from '../DoctorsAppointment/DoctorsAppointment';
 import FeaturedService from '../FeaturedService/FeaturedService';
-import Footer from '../Footer/Footer';
-import Header from '../Header/Header';
+import Footer from '../../Shared/Footer/Footer';
+
 import Services from '../Services/Services';
 import Testimonial from '../Testimonial/Testimonial';
+import Header from '../Header/Header';
 
 const Home = () => {
     return (
         <div>
-           <Header> </Header>
+           <Header></Header>
            <Services></Services>
            <FeaturedService></FeaturedService>
            <DoctorsAppointment></DoctorsAppointment>
